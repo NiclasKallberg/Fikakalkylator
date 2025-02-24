@@ -1,0 +1,490 @@
+﻿@page "/"
+
+
+@*Om data inte är färdighämtad från API, visa "Laddar..."-element*@
+@if(!loadingFinished){
+
+
+    @loadingScreen
+
+}
+
+else {
+
+
+    //Om användare ej finns, visa text, annars visa användare
+    @if(users.Count==0){
+
+        <h3>Finns inga användare tillagda!</h3>
+
+    }
+
+    else {
+
+
+        <table id="hi-score-list">
+
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Namn</th>
+                    <th>Poäng</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+
+
+                @*Gå igenom lista med användare*@
+                @foreach(var user in users){
+
+                    //Börja med att sätta användarens poäng på 0
+                    user.TotalPoints = 0;
+
+                    //Gå igenom köp och lägg till köppoängen till användaren som gjort köpet
+                    foreach (Purchase purchase in purchases)
+                        if (purchase.UserId == user.Id)
+                            user.TotalPoints += purchase.TotalPoints;
+                }
+
+
+                @{
+
+                    //Ny användarlista sorterad efter poäng, högt till lågt
+                    List<User> orderedUsers = users.OrderByDescending(x => x.TotalPoints).ToList();
+
+                    int hiScoreListPosition = 0;
+                    int scoreForPreviousUserInList = 0;
+
+                    //Gå igenom sorterad användarlista och lägg till placering till användare
+                    foreach(User user in orderedUsers){
+
+                        /*Om användare inte har samma poäng som den på positionen innan 
+                        i listan eller om den är först i listan, plussa på ett steg */
+                        if (scoreForPreviousUserInList != user.TotalPoints || hiScoreListPosition == 0)
+                            hiScoreListPosition++;
+
+                        //Lägg poäng för användare i variabel så man kan jämföra med nästa i listan
+                        scoreForPreviousUserInList = user.TotalPoints;
+
+                        //Lägg till placering till användare
+                        user.Position = hiScoreListPosition;
+
+                        
+
+
+                    }
+
+                    firstUserInListWithNoPoints = false;
+
+                }
+
+                @*Sortera nu användare efter position*@
+                @foreach (User user in users.OrderBy(x => x.Position).ToList()){
+
+
+                    
+
+
+
+                    string styleClassForFirstUserWithNoPoints = "";
+
+
+                    //Lägg till CSS-klass för första användaren med noll poäng så man kan lägga till en skiljelinje till de med poäng
+                    if (user.TotalPoints == 0 && !firstUserInListWithNoPoints){
+
+                        styleClassForFirstUserWithNoPoints = " first-zero-points";
+                        firstUserInListWithNoPoints = true;
+
+                    }
+
+
+
+                    <tr class="@highlightedUser(user.Id) @styleClassForFirstUserWithNoPoints">
+
+
+                        @*Om användare har 0 poäng får den ingen placering alls*@
+                        @if(user.TotalPoints==0){
+                            <td></td>
+                        }
+
+
+                        @*Dela ut guld-, silver- och bronsstjärnor*@
+                        else if(user.Position == 1)
+                        {
+                            <td class="star"><img width="35"  src="img/gold-star.png" /></td>
+                        }
+
+                        else if(user.Position == 2)
+                        {
+                            <td class="star"><img width="35" src="img/silver-star.png" /></td>
+                        }
+
+                        else if(user.Position == 3)
+                        {
+                            <td class="star"><img width="35" src="img/bronze-star.png" /></td>
+                        }
+
+                        @*Lägg placering om har poäng men ingen pallplats*@
+                        else
+                        {
+                            <td>@user.Position</td>
+                        }
+
+
+                        @*Här visas namnet, om personen har några poäng kan man trycka på namnet för att visa köphistorik*@
+                        @if(user.TotalPoints > 0){
+                            <td><a href="" @onclick="()=>ShowPurchaseHistory(user)">@user.DisplayName</a></td>
+                        }
+
+                        else{
+                            <td>@user.DisplayName</td>
+                        }
+
+
+
+                        <td>@user.TotalPoints</td>
+
+
+
+
+
+                        <td>
+
+                        @*Lägga till köp-ruta*@
+                            @if(user.Id == userIdToAddPurchaseTo){
+
+
+                                <section id="section-add-purchase">
+
+                                    <table>
+
+                                        @foreach (Product product in products)
+                                        {
+
+                                            int productIndex = products.IndexOf(product);
+
+
+                                            purchaseQuantities.Add(0);
+
+                                            if (purchaseQuantities.Count > products.Count)
+                                                purchaseQuantities.RemoveRange(products.Count, purchaseQuantities.Count - products.Count);
+
+
+                                            <tr>
+                                                <td>@product.Name</td>
+
+                                                <td><input type="button" value="-" disabled="@((purchaseQuantities[productIndex] == 0))" @onclick="() => purchaseQuantities[productIndex]--" /></td>
+
+                                                <td>@purchaseQuantities[productIndex]</td>
+
+                                                <td><input type="button" value="+" @onclick="() => purchaseQuantities[productIndex]++" /></td>
+
+                                                <td>@(purchaseQuantities[productIndex] * product.Points)</td>
+                                            </tr>
+
+
+                                        }
+
+                                    </table>
+
+
+
+                                    <div>
+
+                                        @*Tryck för att ta bort ruta*@
+                                        <input type="button" value="AVBRYT" @onclick="hideSectionAddPurchase" />
+
+                                        @*Tryck för att köpa*@
+                                        @*.ToList() är tillagt för att det behöver göras en kopia på listan och inte en referens*@
+                                        <input type="button" value="LÄGG TILL INKÖP" @onclick="() => PostPurchase(products, purchaseQuantities.ToList())" />
+                                    </div>
+
+
+
+                                </section>
+
+
+                            }
+
+
+                            @*Tryck för att visa "Lägg till köp"-ruta*@
+                            <input type="button" value="Lägg till" @onclick="() => ShowSectionAddPurchase(user.Id)" />
+                        </td>
+
+                    </tr>
+                }
+
+
+
+            </tbody>
+
+
+
+        </table>
+
+
+        @*Visa köphistorik*@
+        if (purchaseHistoryIsVisible)
+        {
+            @*Trycker du var som helst försvinner rutan*@
+            <div id="PurchaseHistory" @onclick="()=>purchaseHistoryIsVisible=false">
+                <table>
+
+                    <tr><td colspan="4"><h3>@purchaseHistoryUsername</h3></td></tr>
+                    <tr>
+                        <td>Datum</td>
+                        <td>Produkt</td>
+                        <td>Antal</td>
+                        <td>Totala poäng</td>
+                    </tr>
+
+                    @foreach(var purchase in purchases.Reverse<Purchase>()){
+
+                        @if(purchase.UserId == purchaseHistoryUserId){
+
+
+                            @foreach(Product product in allProducts){
+
+
+
+                                @if(product.Id == purchase.ProductId){
+
+
+                                    <tr>
+                                        <td>@purchase.CreatedDate.Date.ToShortDateString()</td>
+                                        <td>@product.Name</td>
+                                        <td>@purchase.Quantity</td>
+                                        <td>@purchase.TotalPoints</td>
+
+                                    </tr>
+
+                                }
+                            }
+                        }
+                    }
+
+
+                </table>
+
+            </div>
+
+        }
+
+
+    }
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+@*När du registrerat ett köp visas en ruta längst ner, följande kod är vad som visas*@
+@if (showMessagePurchaseAdded)
+{
+
+    <div id="purchase-added-message">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+
+
+            <symbol id="check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </symbol>
+
+        </svg>
+
+        <div class="alert alert-primary d-flex align-items-center my-class" role="alert">
+
+            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
+
+            <div>
+                Köp tillagt! <a class="alert-link" @onclick="UndoPurchase" href="">Ångra</a>
+            </div>
+        </div>
+
+    </div>
+
+
+}
+
+
+
+
+
+
+@using BlazorApp1.Models
+@inject HttpClient httpClient
+@inherits GetDataComponent
+
+@using BlazorApp1.Components
+@inject AlertComponent alertComponent
+
+
+
+<AlertComponent @ref="alertComponent" />
+
+@code {
+
+
+
+
+
+
+
+
+    //Detta kodblock används för att lägga en skiljelinje mellan de som har poäng och de som inte har det
+    /*************************************/
+    bool firstUserInListWithNoPoints = false;
+
+    string highlightedUser(Guid guid)
+    {
+        if (guid == userIdToAddPurchaseTo)
+            return "highlighted";
+
+        return "";
+    }
+    /*************************************/
+
+
+
+
+
+
+
+    //Visa köphistorik
+    /******************/
+
+    bool purchaseHistoryIsVisible = false;
+    Guid purchaseHistoryUserId = Guid.Empty;
+    string purchaseHistoryUsername = "";
+
+    void ShowPurchaseHistory(User user){
+
+        purchaseHistoryIsVisible = false;
+
+        if(user.TotalPoints>0){
+            purchaseHistoryIsVisible = true; 
+            purchaseHistoryUserId = user.Id;
+            purchaseHistoryUsername = user.DisplayName;
+
+        }
+
+    }
+    /******************/
+
+
+
+
+
+
+
+
+
+    Guid userIdToAddPurchaseTo;
+
+    void ShowSectionAddPurchase(Guid userId)
+    {
+        userIdToAddPurchaseTo = userId;
+    }
+
+
+    void hideSectionAddPurchase()
+    {
+        userIdToAddPurchaseTo = Guid.Empty;
+    }
+
+
+
+
+
+    bool showMessagePurchaseAdded = false;
+
+    List<int> purchaseQuantities = new();
+
+    async Task PostPurchase(List<Product> productsParameter, List<int> purchaseQuantitiesParameter)
+    {
+        showMessagePurchaseAdded = false;
+
+        int listIndex = -1;
+
+        foreach (int quantity in purchaseQuantitiesParameter)
+        {
+
+            listIndex++;
+
+
+            if (quantity > 0)
+            {
+
+
+                HttpResponseMessage httpResponseMessage = await httpClient.PostAsJsonAsync("api/Purchases", new Purchase()
+                    {
+                        Quantity = quantity,
+                        CreatedDate = DateTime.Now,
+                        UserId = userIdToAddPurchaseTo,
+                        ProductId = productsParameter[listIndex].Id
+                    });
+
+
+
+                //Om API:n inte godkänner, visa meddelande
+                if (!httpResponseMessage.IsSuccessStatusCode)
+                    await alertComponent.ShowAlert(httpResponseMessage.Content.ReadAsStringAsync().Result);
+
+
+                else
+                {
+                    showMessagePurchaseAdded = true;
+                }
+
+            }
+
+
+        }
+
+
+
+        this.purchaseQuantities.Clear();
+        hideSectionAddPurchase();
+
+
+
+        //Hämta till sist uppdaterad data
+        await OnInitializedAsync();
+    }
+
+
+
+
+
+
+
+    //Metod för när du trycker på "Ångra" när du registrerat ett köp
+    async Task UndoPurchase(){
+
+        showMessagePurchaseAdded = false;
+
+        purchases = purchases.OrderBy(x => x.CreatedDate).ToList();
+
+        Guid purchaseId = purchases[purchases.Count - 1].Id;
+
+        HttpResponseMessage httpResponseMessage = await httpClient.DeleteAsync($"api/Purchases/{purchaseId.ToString()}");
+
+        await OnInitializedAsync();
+
+
+
+    }
+}

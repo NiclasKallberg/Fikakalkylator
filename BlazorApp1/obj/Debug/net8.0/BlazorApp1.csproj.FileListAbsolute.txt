@@ -1,0 +1,368 @@
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Mitt\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Mitt\Fikakalkylator\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Mitt\Fikakalkylator övrigt\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Mitt\Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator 2.0\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.AssemblyReference.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\Header.razor.rz.scp.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.Up2Date
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Niclas\Mitt\[3] Programmering\Fikakalkylator\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll

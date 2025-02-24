@@ -1,0 +1,11 @@
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.png
+wwwroot\img\bronze-star.png
+wwwroot\img\gold-star.png
+wwwroot\img\pen-icon.png
+wwwroot\img\silver-star.png
+wwwroot\img\trash-icon.png
+wwwroot\script.js
+wwwroot\styles.css

@@ -1,0 +1,1141 @@
+﻿@page "/admin"
+
+
+
+
+@*HÄR ÄNDRAR DU LÖSENORD*@
+@************************@
+@code{
+    string password = "1234";
+}
+@************************@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Data hämtas och under tiden visas "Laddar"-element*@
+@if (!loadingFinished)
+{
+
+    @loadingScreen
+
+}
+
+@*Sedan visas sidan*@
+else{
+
+
+    <h2>MEDARBETARE</h2>
+
+
+
+    //Lägg till användare, början av kodblock
+    /**********************/
+    <section id="user-buttons">
+        <input type="button" value="Lägg till" @onclick="ToggleSectionAddUser"/>
+        <input type="button" value="Ändra" @onclick="ToggleButtonsForEditingUser"/>
+        <input type="button" value="Ta bort" @onclick="ToggleButtonsDeleteUser" />
+    </section>
+
+
+    @if(!hideSectionAddUser){
+
+        <form autocomplete="off" onsubmit="return false" id="add-user-section">
+
+            <div>
+                <label>Användarnamn</label>
+                <input placeholder="Valfritt" @bind="newUsernameAdd" />
+            </div>
+
+
+            <div>
+                <label>Förnamn</label>
+                <input placeholder="Obligatoriskt" @bind="newFirstNameAdd" @bind:event="oninput" />
+            </div>
+
+
+            <div>
+                <label>Efternamn</label>
+                <input placeholder="Obligatoriskt" @bind="newLastNameAdd" @bind:event="oninput" />
+            </div>
+
+            <input type="submit" value="Lägg till" @onclick="async ()=>{await ValidateUser(newUsernameAdd,newFirstNameAdd,newLastNameAdd);}"  disabled=@ToggleButtonAddUser()  />
+
+        </form>
+    }
+    //Lägg till användare, slutet av kodblock
+
+
+
+
+
+
+    @*Lista med användare början*@
+    @******************************@
+    <div id="users-container">
+
+        @if (users.Count == 0)
+        {
+            <h3>Finns inga användare!</h3>
+        }
+
+
+        else
+        {
+            <ul id="user-list">
+
+                @foreach (User user in users)
+                {
+
+                    <li>
+
+                        <img src="img/pen-icon.png" alt="Penn-ikon" class=@(("icons " + hideButtonsCssClassEditUser).Trim()) @onclick="() => EditUser(user)" />
+                        <img src="img/trash-icon.png" alt="Papperskorg-ikon" class=@(("icons " + hideButtonsDeleteUserCssClass).Trim()) @onclick="() => DeleteUser(user)" />
+
+
+
+                        @*Om användare ska redigeras*@
+                        @if (editUserAtThisIndex == users.IndexOf(user))
+                        {
+                            //Fält för att redigera användare
+                            <form id="edit-user-section" autocomplete="off" onsubmit="return false" @onkeyup="EscapeKeyPressed">
+
+                                <label>Användarnamn</label>
+                                <input @bind="newUsernameEdit" placeholder="Valfritt" />
+
+                                <label>Förnamn</label>
+                                <input @bind="newFirstNameEdit" @bind:event="oninput" placeholder="Obligatoriskt" />
+
+                                <label>Efternamn</label>
+                                <input @bind="newLastNameEdit" @bind:event="oninput" placeholder="Obligatoriskt" />
+
+                                <input type="submit" value="Spara" @onclick="async()=>{await ValidateUser(newUsernameEdit,newFirstNameEdit,newLastNameEdit);}" disabled=@ToggleButtonEditUser()>
+                                <input type="button" value="Avbryt" @onclick="() => editUserAtThisIndex = -1">
+
+                            </form>
+
+                            /*Denna användas för att dölja namnet i namnlistan medans man redigerar den om namnet 
+                            mot förmodan skulle synas, namnet ska fortfarande ta upp samma yta så därför används CSS*/
+                            displayNameIsHidden = "hide-name";
+                        }
+
+                        else
+
+                            displayNameIsHidden = "";
+
+
+
+
+
+                        <span class="@displayNameIsHidden">
+
+
+
+                            <!--Visa användarnamn om ett sådant finns, annars visa för- och efternamn-->
+                            @if (user.Username != null && user.Username.Length > 0)
+                                @user.Username
+
+                            else
+                                @(user.FirstName + " " + user.LastName)
+
+
+                        </span>
+
+                    </li>
+
+                }
+
+            </ul>
+
+
+
+        }
+
+
+    </div>
+
+    @*Lista med användare slut*@
+
+
+}
+
+
+
+@*KOD ANVÄNDARE*@
+@**************************@
+
+
+
+@using BlazorApp1.Models
+@inject HttpClient httpClient
+@inherits GetDataComponent
+
+
+@inject AlertComponent alertComponent
+<AlertComponent @ref="alertComponent" />
+
+
+
+@inject ConfirmDialogComponent confirmDialogComponent
+<ConfirmDialogComponent @ref="confirmDialogComponent"></ConfirmDialogComponent>
+
+
+
+
+
+
+@code{
+
+
+    //Dessa variabler binds till textfält och används för att lägga till/ändra användare
+    string newUsernameAdd = "";
+    string newFirstNameAdd = "";
+    string newLastNameAdd = "";
+
+    string newUsernameEdit = "";
+    string newFirstNameEdit = "";
+    string newLastNameEdit = "";
+
+
+
+    //Dessa används för att komma ihåg nuvarande användare om man ändrar på någon
+    string currentUsernameEdit = "";
+    string currentFirstNameEdit = "";
+    string currentLastNameEdit = "";
+
+
+
+
+
+
+    //Visa/dölj sektion med textfält där man lägger till användare
+    /**********************************************/
+
+    bool hideSectionAddUser = true;
+
+    void ToggleSectionAddUser()
+    {
+
+        hideSectionAddUser = !hideSectionAddUser;
+
+        editUserAtThisIndex = -1;
+
+    }
+
+    /******************************************/
+
+
+
+
+
+
+
+
+
+    //Visa/dölj ikoner för att redigera/radera användare
+    /******************************************/
+
+    //Lägger till CSS-klass till ändra- och ta bort-knapparna när de inte ska synas
+    //De är absolut-positionerade så de tar inte upp någon plats i GUI:n
+
+    string hideButtonsCssClassEditUser = "no-display";
+    string hideButtonsDeleteUserCssClass = "no-display";
+
+    int indexLastEditedUser = -1;
+
+    //Redigera-knappar
+    void ToggleButtonsForEditingUser()
+    {
+
+        //Om redigerinsknappar är dolda, visa dem och dölj radera-knappar
+        if (hideButtonsCssClassEditUser.Contains("no-display"))
+        {
+
+            hideButtonsCssClassEditUser = "";
+            hideButtonsDeleteUserCssClass = "no-display";
+        }
+
+        //Annars dölj redigera-knappar
+        else
+        {
+
+            editUserAtThisIndex = -1;
+            hideButtonsCssClassEditUser = "no-display";
+
+
+        }
+    }
+
+    //Radera-knappar
+    void ToggleButtonsDeleteUser()
+    {
+
+        if (hideButtonsDeleteUserCssClass.Contains("no-display")) {
+
+            editUserAtThisIndex = -1;
+            hideButtonsCssClassEditUser = "no-display";
+            hideButtonsDeleteUserCssClass = "";
+        }
+
+        else {
+            hideButtonsDeleteUserCssClass = "no-display";
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // När man har valt användare att redigera
+    /*******************************************/
+
+    //Denna sparar vilken användare i listan man är på när man har valt en att redigera
+    // -1 betyder att ingen användare är vald
+    int editUserAtThisIndex = -1;
+
+    string userIdAsString = "";
+
+    string displayNameIsHidden = "";
+
+
+    void EditUser(User user)
+    {
+        // Spara indexet där användaren som ska redigeras ligger
+        int userIndex = users.IndexOf(user);
+
+
+
+
+        if (indexLastEditedUser != editUserAtThisIndex)
+        {
+            newFirstNameEdit = "";
+            newLastNameEdit = "";
+            newUsernameEdit = "";
+        }
+
+
+
+        // Om man redan håller på att redigera, gå ur redigeringsläge
+        if (editUserAtThisIndex == userIndex){
+
+            editUserAtThisIndex = -1;
+
+
+        }
+
+
+        //Annars slå på
+        else
+        {
+
+            hideSectionAddUser = true;
+
+            editUserAtThisIndex = indexLastEditedUser = userIndex;
+
+
+            userIdAsString = user.Id.ToString() ?? "";
+
+            currentUsernameEdit = newUsernameEdit = user.Username ?? "";
+            currentFirstNameEdit = newFirstNameEdit = user.FirstName ?? "";
+            currentLastNameEdit = newLastNameEdit = user.LastName ?? "";
+
+
+
+        }
+    }
+
+
+
+    //När man valt användare att redigera kan man trycka på escape för att ta bort textfälten
+    //Blir samma effekt som att tryck på Avbryt
+    void EscapeKeyPressed(KeyboardEventArgs keyboardEventArgs)
+    {
+
+        if (keyboardEventArgs.Key == "Escape")
+            editUserAtThisIndex = -1;
+
+    }
+
+
+
+
+    //Knappen för att lägga till användare är oklickbar om förnamn eller efternamn saknas
+    bool ToggleButtonAddUser(){
+        return (newFirstNameAdd.Trim().Length > 0 && newLastNameAdd.Trim().Length > 0) is false;
+
+    }
+
+
+
+
+    //Knappen för att redigera användare är oklickbar om förnamn eller efternamn saknas
+    bool ToggleButtonEditUser(){
+        return (newFirstNameEdit.Trim().Length > 0 && newLastNameEdit.Trim().Length > 0) is false;
+
+    }
+
+
+
+
+
+
+
+
+
+
+    //Validera användare
+    /************************************************/
+
+    async Task ValidateUser(string usernameToValidate, string firstNameToValidate, string lastNameToValidate)
+    {
+
+        //Ta bort blanksteg före och efter
+        usernameToValidate = usernameToValidate.Trim();
+        firstNameToValidate = firstNameToValidate.Trim();
+        lastNameToValidate = lastNameToValidate.Trim();
+
+
+
+        string errorMessage = "";
+
+        /*Kolla så förnamn och efternamn inte är tomma ifall någon 
+          mot förmodan skulle lyckas komma förbi Lägg till-knappen*/
+        if ((firstNameToValidate.Trim().Length > 0 && lastNameToValidate.Trim().Length > 0) is false)
+            errorMessage = "Förnamn och efternamn måste fyllas i!";
+
+
+        //Kontrollera att namnen inte är för långa
+        //Alla kombinationer av fel ger ett unikt värde och därmed ett unikt meddelande
+        else
+        {
+            int errorCalculation = 0;
+
+            if (usernameToValidate.Length > 100)
+                errorCalculation += 1;
+
+            if (firstNameToValidate.Length > 40)
+                errorCalculation += 2;
+
+            if (lastNameToValidate.Length > 40)
+                errorCalculation += 4;
+
+
+            switch (errorCalculation)
+            {
+                case 1:
+                    errorMessage = "Användarnamnet";
+                    break;
+
+                case 2:
+                    errorMessage = "Förnamnet";
+                    break;
+
+                case 3:
+                    errorMessage = "Användarnamnet och förnamnet";
+                    break;
+
+                case 4:
+                    errorMessage = "Efternamnet";
+                    break;
+
+                case 5:
+                    errorMessage = "Användarnamnet och efternamnet";
+                    break;
+
+                case 6:
+                    errorMessage = "Förnamnet och efternamnet";
+                    break;
+
+                case 7:
+                    errorMessage = "Användarnamnet, förnamnet och efternamnet";
+                    break;
+            }
+
+            //Lägg till sista biten på meddelandet
+            if (errorCalculation > 0)
+                errorMessage += " är för långt";
+
+            //Annars fortsätt validera
+            else
+            {
+
+                //Kolla så namnet inte är samma som nuvarande om man ändrar befintlig användare
+                if (currentUsernameEdit == usernameToValidate &&
+                    currentFirstNameEdit == firstNameToValidate &&
+                    currentLastNameEdit == lastNameToValidate)
+
+                    errorMessage = "Nya namnet är exakt som det gamla";
+
+
+                //Kolla så exakt samma kombination av namn inte redan finns
+                else
+                {
+
+                    foreach (User user in users)
+                    {
+                        if ((user.Username is not null && 
+                            usernameToValidate.ToUpper() == user.Username.ToUpper())
+                        )
+                        {
+
+                            errorMessage = "Användarnamnet är upptaget!";
+
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+
+
+        //Visa felmeddelande om namnen inte är godkända
+        if (errorMessage.Length > 0)
+            await alertComponent.ShowAlert(errorMessage);
+
+
+
+
+        //Annars fortsätt
+        else {
+
+
+            //Om användare ska ändras, hämta GUID och användar-objekt
+            if (userIdAsString.Length > 0) {
+
+                string createdDate = "";
+
+                foreach (var i in users)
+                {
+                    if (i.Id==Guid.Parse(userIdAsString)){
+                        createdDate = i.CreatedDate.ToString()??"";
+                    }
+                }
+
+
+
+                User userToBeEdited = new User()
+                    {
+                        Id = Guid.Parse(userIdAsString),
+                        Username = usernameToValidate,
+                        FirstName = firstNameToValidate,
+                        LastName = lastNameToValidate,
+                        CreatedDate=DateTime.Parse(createdDate),
+                        ModifiedDate = DateTime.Now,
+
+                    };
+
+
+
+
+
+
+                await PutUser(userToBeEdited);
+            }
+
+            //Annars lägg bara till användare istället
+            else{
+
+                await PostUser();
+
+            }
+
+        }
+    }
+
+
+
+
+    //Radera användare
+    /*********************************************/
+    async Task DeleteUser(User user)
+    {
+
+
+        string displayName = user.FirstName + " " + user.LastName;
+
+        if (user.Username != null && user.Username.Length > 0)
+            displayName = user.Username;
+
+
+
+        //Om användare bekräftar i Blazor Bootstrap-dialog som öppnas
+        if (await confirmDialogComponent.Open("Är du säker på att du vill ta bort " + displayName + "?", "Detta kan inte ångras."))
+        {
+
+            User userToDelete = new User()
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                CreatedDate=user.CreatedDate,
+                ModifiedDate=user.ModifiedDate,
+                DeletedDate = DateTime.Now
+
+            };
+
+            await PutUser(userToDelete);
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    //Ändra/Ta bort användare
+    public async Task PutUser(User user)
+    {
+
+        //Skicka till API:n
+        HttpResponseMessage httpResponseMessage = await httpClient.PutAsJsonAsync($"api/Users/{user.Id}", user);
+
+
+
+
+        //Om API:n inte godkänner, visa meddelande
+        if (!httpResponseMessage.IsSuccessStatusCode)
+
+            await alertComponent.ShowAlert(httpResponseMessage.Content.ReadAsStringAsync().Result);
+
+
+
+
+
+
+
+        else
+        {
+            newUsernameAdd = "";
+            newFirstNameAdd = "";
+            newLastNameAdd = "";
+
+            currentUsernameEdit = "";
+            currentFirstNameEdit = "";
+            currentLastNameEdit = "";
+            newUsernameEdit = "";
+            newFirstNameEdit = "";
+            newLastNameEdit = "";
+            indexLastEditedUser = -1;
+
+
+            editUserAtThisIndex = -1;
+            hideButtonsCssClassEditUser = "no-display";
+            hideButtonsDeleteUserCssClass = "no-display";
+
+        }
+
+
+
+        //Hämta uppdaterad lista med användare
+        await OnInitializedAsync();
+
+    }
+
+
+
+    //Lägg till användare
+    /*****************************/
+
+
+    public async Task PostUser()
+    {
+
+        //Skicka till API:n
+        HttpResponseMessage httpResponseMessage = await httpClient.PostAsJsonAsync("api/Users", new User()
+            {
+                Username = newUsernameAdd.Trim(),
+                FirstName = newFirstNameAdd.Trim(),
+                LastName = newLastNameAdd.Trim(),
+                CreatedDate = DateTime.Now,
+                ModifiedDate=DateTime.Now
+            });
+
+
+
+        //Om API:n inte godkänner, visa meddelande
+        if (!httpResponseMessage.IsSuccessStatusCode)
+        {
+
+            await alertComponent.ShowAlert(httpResponseMessage.Content.ReadAsStringAsync().Result);
+
+
+
+        }
+
+
+        // Annars töm textfält
+        else
+        {
+            newUsernameAdd = "";
+            newFirstNameAdd = "";
+            newLastNameAdd = "";
+
+            currentUsernameEdit = "";
+            currentFirstNameEdit = "";
+            currentLastNameEdit = "";
+            newUsernameEdit = "";
+            newFirstNameEdit = "";
+            newLastNameEdit = "";
+            indexLastEditedUser = -1;
+
+
+            editUserAtThisIndex = -1;
+            hideButtonsCssClassEditUser = "no-display";
+            hideButtonsDeleteUserCssClass = "no-display";
+
+
+            hideSectionAddUser = true;
+
+
+        }
+
+        //Hämta till sist uppdaterad lista med användare
+        await OnInitializedAsync();
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+<!--PRODUKTER-->
+<!-------------------------------------->
+
+
+@if(loadingFinished){
+
+
+
+    <h2>VAROR</h2>
+
+    <form id="password-section" onsubmit="return false" >
+
+        <input placeholder="Lösenord" type="password" @bind=passwordInput/>
+        <input type="submit" value="@validatePasswordButtonText" @onclick="ValidatePassword" />
+
+        @if(showErrorWrongPassword){
+
+            <span id="password-error" >@errorMessagePassword</span>
+        }
+
+    </form>
+
+
+    @if (products.Count == 0)
+    {
+
+        <h3>Finns inga varor!</h3>
+    }
+
+
+
+
+    <table id="products">
+
+        <tbody>
+            @foreach (Product product in products)
+            {
+
+                int productIndex = products.IndexOf(product);
+
+
+
+                currentProductNames.Add(product.Name ?? "");
+
+                if (currentProductNames.Count > products.Count)
+                    currentProductNames.RemoveRange(products.Count, currentProductNames.Count - products.Count);
+
+
+                currentProductPoints.Add(product.Points);
+
+                if (currentProductPoints.Count > products.Count)
+                    currentProductPoints.RemoveRange(products.Count, currentProductPoints.Count - products.Count);
+
+
+
+                DeleteOrEdits.Add(true);
+
+                if (DeleteOrEdits.Count > products.Count)
+                    DeleteOrEdits.RemoveRange(products.Count, DeleteOrEdits.Count - products.Count);
+
+
+
+
+                showConfirmationsEditedProduct.Add(0);
+
+                if (showConfirmationsEditedProduct.Count > products.Count)
+                    showConfirmationsEditedProduct.RemoveRange(products.Count, showConfirmationsEditedProduct.Count - products.Count);
+
+
+                <tr>
+                    <td><input @bind="currentProductNames[productIndex]" @bind:event="oninput" disabled="@noAdminAccess" /></td>
+
+
+                    <td><input @bind="currentProductPoints[productIndex]" @bind:event="oninput" type="number" step="10" min="0" disabled="@noAdminAccess" /><b> P </b></td>
+
+
+                    <td><input type="submit" @onclick="async() => await PutProduct(productIndex, product)" disabled="@noAdminAccess" value="@ToggleDeleteOrEdit(productIndex)" /></td>
+
+                    @if(showConfirmationsEditedProduct[productIndex]==1)
+                    {
+
+                        <td>
+                            <div class="alert alert-primary d-flex align-items-center my-class2" role="alert">
+                                Vara ändrad!
+                            </div>
+                        </td>
+
+                    }
+                </tr>
+
+            }
+
+
+            <tr>
+                <td><input @bind=newProductName @bind:event="oninput" disabled="@noAdminAccess" placeholder="Ny vara"/></td>
+                <td><input placeholder="0" @bind=newProductPoints @bind:event="oninput" type="number" step="10" min="0" disabled="@noAdminAccess" /><b> P </b></td>
+                <td><input type="submit" value="Lägg till" disabled="@noAdminAccess" @onclick="async() => await PostProduct()" /></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+}
+
+
+
+@*Kod för varor*@
+@*********************@
+@code{
+
+
+    bool noAdminAccess = true;
+    string validatePasswordButtonText = "OK";
+    string passwordInput = "";
+
+
+    string errorMessagePassword = "";
+    bool showErrorWrongPassword = false;
+
+
+    List<int> showConfirmationsEditedProduct = new();
+
+    void ValidatePassword()
+    {
+        if(validatePasswordButtonText == "Lås"){
+
+            noAdminAccess = true;
+            showErrorWrongPassword = false;
+            validatePasswordButtonText = "OK";
+
+        }
+
+        else if (passwordInput.Length==0) {
+            showErrorWrongPassword = true;
+
+            errorMessagePassword = "Du måste ange lösenord!";
+        }
+
+
+        else if (passwordInput != password)
+        {
+
+            showErrorWrongPassword = true;
+            errorMessagePassword = "Fel lösenord!";
+
+        }
+
+        else
+        {
+            noAdminAccess = false;
+            showErrorWrongPassword = false;
+            validatePasswordButtonText = "Lås";
+        }
+
+        passwordInput = "";
+    }
+
+
+
+
+
+
+
+    List<string> currentProductNames = new List<string>();
+    List<int> currentProductPoints = new List<int>();
+
+
+
+    string newProductName = "";
+    int newProductPoints = 0;
+
+
+    List<bool> DeleteOrEdits = new List<bool>();
+
+
+
+    /*När du skriver i rutan för en produkt så körs denna metod för varje tecken som skrivs,
+    om någonting har ändrats så står det "Ändra" i knappen istället*/
+    string ToggleDeleteOrEdit(int index){
+
+        //Om namn eller poäng är ändrade, ändra knapptexten till "Ändra"
+        if (currentProductNames[index] != products[index].Name
+            || currentProductPoints[index] != products[index].Points)
+        {
+            DeleteOrEdits[index] = false;
+            return "Ändra";
+
+        }
+
+        //Annars ska det stå "Ta bort"
+        else {
+
+            DeleteOrEdits[index] = true;
+            return  "Ta bort";
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    bool productValidationSuccessful = false;
+
+    async Task ValidateProductName(string value, int index)
+    {
+
+        if (value.Length == 0)
+            await alertComponent.ShowAlert("Produktnamn saknas!");
+
+
+        else if (value.Length > 40)
+            await alertComponent.ShowAlert("Produktnamnet är för långt!");
+
+
+
+        else
+        {
+
+
+            productValidationSuccessful = true;
+
+
+            foreach (var i in products)
+            {
+                if (i.Name == value && i.Points == index)
+                {
+
+                    productValidationSuccessful = false;
+                    await alertComponent.ShowAlert("Det finns redan en produkt med exakt samma namn och poäng");
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Ändra/ta bort produkt
+    public async Task PutProduct(int productIndex, Product product)
+    {
+
+        if (DeleteOrEdits[productIndex]){
+
+            if (!await confirmDialogComponent.Open("Är du säker på att du vill ta bort " + products[productIndex].Name + "?", "Detta kan inte ångras."))
+            { return; };
+
+
+            product.DeletedDate = DateTime.Now;
+
+
+        }
+
+
+        else {
+
+            await ValidateProductName(currentProductNames[productIndex], currentProductPoints[productIndex]);
+
+            if (!productValidationSuccessful)
+                return;
+
+            else{
+
+
+
+                productValidationSuccessful = false;
+
+
+
+                product.Name = currentProductNames[productIndex];
+                product.Points = currentProductPoints[productIndex];
+                product.ModifiedDate = DateTime.Now;
+            }
+        }
+
+
+
+
+
+        //Skicka till API:n
+        HttpResponseMessage httpResponseMessage = await httpClient.PutAsJsonAsync($"api/Products/{product.Id}", product);
+
+
+
+
+        //Om API:n inte godkänner, visa meddelande
+        if (!httpResponseMessage.IsSuccessStatusCode)
+            await alertComponent.ShowAlert(httpResponseMessage.Content.ReadAsStringAsync().Result);
+
+
+
+
+        else
+        {
+            for (int i = 0; i < showConfirmationsEditedProduct.Count; i++)
+                showConfirmationsEditedProduct[i] = 0;
+
+            if (product.DeletedDate==null)
+                showConfirmationsEditedProduct[productIndex] = 1;
+            
+
+
+
+            newProductName = "";
+            newProductPoints = 0;
+            currentProductNames.Clear();
+            currentProductPoints.Clear();
+            productValidationSuccessful = false;
+
+            DeleteOrEdits.Clear();
+
+            //Hämta uppdaterad lista med användare
+            await OnInitializedAsync();
+            
+
+        }
+
+        
+
+
+
+    }
+
+
+
+    
+
+    public async Task PostProduct()
+    {
+
+        await ValidateProductName(newProductName, newProductPoints);
+
+        if (!productValidationSuccessful)
+            return;
+
+
+        //Skicka till API:n
+        HttpResponseMessage httpResponseMessage = await httpClient.PostAsJsonAsync("api/Products", new Product()
+        {
+            Name = newProductName,
+            Points = newProductPoints,
+            CreatedDate = DateTime.Now,
+            ModifiedDate = DateTime.Now
+        });
+
+
+
+
+
+        //Om API:n inte godkänner, visa meddelande
+        if (!httpResponseMessage.IsSuccessStatusCode)
+            await alertComponent.ShowAlert(httpResponseMessage.Content.ReadAsStringAsync().Result);
+
+
+
+
+
+
+        // Annars töm textfält
+        else
+        {
+            for (int i = 0; i < showConfirmationsEditedProduct.Count; i++)
+                showConfirmationsEditedProduct[i] = 0;
+
+            newProductName = "";
+            newProductPoints = 0;
+            currentProductNames.Clear();
+            currentProductPoints.Clear();
+            productValidationSuccessful = false;
+
+            products.Clear();
+            allProducts.Clear();
+            DeleteOrEdits.Clear();
+
+
+        
+
+            //Hämta till sist data på nytt
+            await OnInitializedAsync();
+
+        }
+
+    }
+
+}

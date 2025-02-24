@@ -1,0 +1,169 @@
+﻿@using Models
+@inject HttpClient httpClient
+
+
+
+@code {
+
+
+    public RenderFragment loadingScreen = 
+
+            @<div class="text-center text-dark">
+
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Laddar...</span>
+                </div>
+                <div>Laddar...</div>
+            </div>;
+
+
+    public bool loadingFinished = false;
+
+
+
+
+
+    //Listor för att lagra data
+    public List<Purchase> purchases = new();
+    public List<User> users = new List<User>();
+    public List<Product> products = new List<Product>();
+    // public List<PositionDuration> positionDurations = new List<PositionDuration>();
+
+    //Denna lista är till för att lagra även produkter som har en DeletedDate så även raderade produkter visas i köphistoriken för användare
+    public List<Product> allProducts = new List<Product>();
+
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        purchases = await httpClient.GetFromJsonAsync<List<Purchase>>("api/Purchases") ?? [];
+        users = await httpClient.GetFromJsonAsync<List<User>>("api/Users") ?? [];
+        allProducts = await httpClient.GetFromJsonAsync<List<Product>>("api/Products") ?? [];
+        // positionDurations = await httpClient.GetFromJsonAsync<List<PositionDuration>>("api/PositionDurations") ?? [];
+
+
+
+        //Detta är om man man vill hämta köp även för föregående år
+        //purchases = await httpClient.GetFromJsonAsync<List<Purchase>>("api/Purchases/All") ?? [];
+
+
+
+
+        //Sortera ut allt som inte har en DeletedDate och lägg i egen lista
+        products = allProducts
+        .Where(x => x.DeletedDate == null)
+        .ToList();
+
+        //Sortera listorna i bokstavsordning
+        users = users.OrderBy(x => x.OrderByThisName).ToList();
+        products = products.OrderBy(x => x.Name).ToList();
+        allProducts = allProducts.OrderBy(x => x.Name).ToList();
+
+    }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        //Detta behövs för att all data ska vara helt färdighämtad varje gång sidan laddas innan datan faktiskt visas
+        if (!firstRender)
+        {
+            await Task.Run(() =>
+            {
+                loadingFinished = true;
+            });
+
+            StateHasChanged();
+        }
+
+
+
+
+        /***********************************/
+        /*Koden nedanför är tänkt ska skicka till databasen hur länge användaren befinner sig på en viss position,
+        har dock inte fått detta att fungera som det är tänkt*/
+        /***********************************/
+
+
+        // if(firstRender){
+
+            // bool thisUserIsRegistered = false;
+
+        //     foreach (User user in users)
+        //     {
+
+
+        //         if(user.TotalPoints > 0){
+
+        //             await Task.Run(async () =>
+        //              {
+        //                  HttpResponseMessage httpResponseMessage = await httpClient.PostAsJsonAsync("api/PositionDurations", new PositionDuration()
+        //                      {
+        //                          Position = user.Position,
+        //                          PositionStartDate = DateTime.Now,
+        //                          UserId = user.Id
+
+        //                      });
+
+
+        //              });
+        //         }
+
+        //         // else {
+
+
+        //         //     foreach(PositionDuration positionDuration in positionDurations){
+
+        //         //         if (positionDuration.UserId == user.Id && positionDuration.Position != user.Position)
+        //         //         {
+
+        //         //             positionDuration.PositionEndDate = DateTime.Now;
+
+        //         //             Task.Run(async () =>
+        //         //             {
+
+        //         //                 HttpResponseMessage httpResponseMessage = await httpClient.PutAsJsonAsync($"api/PositionDurations/{positionDuration.Id}", positionDuration);
+
+        //         //                 
+        //         //             });
+
+        //         //         }
+
+        //         //         else if (positionDuration.UserId == user.Id && positionDuration.Position == user.Position)
+        //         //         {
+        //         //             thisUserIsRegistered = true;
+        //         //         }
+
+        //         //     }
+
+        //         //     if(!thisUserIsRegistered && user.TotalPoints>0){
+        //         //         Task.Run(async () =>
+        //         //         {
+        //         //             HttpResponseMessage httpResponseMessage = await httpClient.PostAsJsonAsync("api/PositionDurations", new PositionDuration()
+        //         //             {
+        //         //                 Position = user.Position,
+        //         //                 PositionStartDate = DateTime.Now,
+        //         //                 UserId = user.Id
+
+        //         //             });
+
+        //         //         });
+        //         //     }
+        //         //  }
+
+
+        //     // }
+
+        // }
+
+
+
+
+
+
+    }
+}

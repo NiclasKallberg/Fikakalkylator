@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\obj\\Release\\net8.0\\win-x86\\scopedcss\\projectbundle\\BlazorApp1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorApp1.qdaegyk8pg.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\img\\bronze-star.png",
+      "PackagePath": "staticwebassets\\img\\bronze-star.png"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\img\\gold-star.png",
+      "PackagePath": "staticwebassets\\img\\gold-star.png"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\img\\pen-icon.png",
+      "PackagePath": "staticwebassets\\img\\pen-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\img\\silver-star.png",
+      "PackagePath": "staticwebassets\\img\\silver-star.png"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\img\\trash-icon.png",
+      "PackagePath": "staticwebassets\\img\\trash-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\script.js",
+      "PackagePath": "staticwebassets\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Niclas\\Mitt\\[3] Programmering\\Fikakalkylator\\BlazorApp1\\wwwroot\\styles.css",
+      "PackagePath": "staticwebassets\\styles.css"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.build.BlazorApp1.props",
+      "PackagePath": "build\\BlazorApp1.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.BlazorApp1.props",
+      "PackagePath": "buildMultiTargeting\\BlazorApp1.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.BlazorApp1.props",
+      "PackagePath": "buildTransitive\\BlazorApp1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,43 @@
+﻿<Modal @ref="modal" Title="">
+
+
+
+    <BodyTemplate>
+        @modalMessage
+    </BodyTemplate>
+
+
+
+    <FooterTemplate>
+        <Button Color="ButtonColor.Primary" @onclick="HideAlert">Stäng</Button>
+    </FooterTemplate>
+</Modal>
+
+
+
+
+@code {
+
+
+    Modal modal = default!;
+    string modalMessage = "";
+
+
+
+    public async Task ShowAlert(string value)
+    {
+        modalMessage = value;
+        await modal.ShowAsync();
+    }
+
+
+
+    public async Task HideAlert()
+    {
+        modalMessage = "";
+        await modal.HideAsync();
+    }
+
+
+
+}
